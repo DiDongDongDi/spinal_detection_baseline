@@ -18,9 +18,9 @@ from nn_tools import torch_utils
 if __name__ == '__main__':
     start_time = time.time()
     train_studies, train_annotation, train_counter = construct_studies(
-        'data/lumbar_train150', 'data/lumbar_train150_annotation.json', multiprocessing=False)
+        'data/lumbar_train150/', 'data/lumbar_train150_annotation.json', multiprocessing=True)
     valid_studies, valid_annotation, valid_counter = construct_studies(
-        'data/lumbar_train51/', 'data/lumbar_train51_annotation.json', multiprocessing=False)
+        'data/lumbar_train51/', 'data/lumbar_train51_annotation.json', multiprocessing=True)
 
     # 设定模型参数
     train_images = {}

@@ -62,7 +62,7 @@ if __name__ == '__main__':
 
     torch.save(dis_model.cpu().state_dict(), 'models/baseline.dis_model')
     # 预测
-    testA_studies = construct_studies('data/lumbar_testA50/', multiprocessing=False)
+    testA_studies = construct_studies('data/lumbar_testA50/', multiprocessing=True)
 
     result = []
     for study in testA_studies.values():
